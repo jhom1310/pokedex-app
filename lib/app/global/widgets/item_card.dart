@@ -17,7 +17,7 @@ class ItemCard extends StatelessWidget {
     var iconFav = true.obs;
     var icon = Icon(CupertinoIcons.heart).obs;
     if (Store.hasKey(poke.name)) {
-      var iconFav = true.obs;
+      iconFav = true.obs;
       icon.value = Icon(CupertinoIcons.heart_fill);
     }
 
