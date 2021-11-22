@@ -1,6 +1,4 @@
 import 'dart:convert';
-
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/app/data/models/pokemon_model.dart';
 import 'package:pokedex/app/data/models/result_model.dart';

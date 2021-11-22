@@ -17,7 +17,6 @@ class SearchView extends StatelessWidget {
             child: TextField(
               controller: controller.ctrlSearch,
               textInputAction: TextInputAction.search,
-              onSubmitted: controller.teste(),
               decoration: InputDecoration(
                 hintText: 'Pesquisar',
                 suffixIcon: IconButton(
@@ -30,7 +29,7 @@ class SearchView extends StatelessWidget {
               //controller: ,
             ),
           ),
-          controller.pokesearchlist.length > 0
+          controller.pokesearchlist.isNotEmpty
               ? ItemCard(poke: controller.pokesearchlist[0])
               : Container(
                   alignment: Alignment.center,

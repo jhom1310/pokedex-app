@@ -14,22 +14,25 @@ class DetailView extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.find<HomeController>();
 
-    var bFav = true.obs;
+    var bFav = false.obs;
     var color = Colors.yellow.obs;
     var text = 'Adicionar aos favoritos'.obs;
     if (Store.hasKey(poke.name)) {
       bFav.value = true;
       color.value = Colors.red;
       text.value = 'Remover dos Favoritos';
+    } else {
+      color.value = Colors.yellow;
+      text.value = 'Adicionar aos favoritos';
     }
 
     void toggleFavorite() {
       if (bFav.value) {
-        color.value = Colors.red;
-        text.value = 'Remover dos Favoritos';
-      } else {
         color.value = Colors.yellow;
         text.value = 'Adicionar aos favoritos';
+      } else {
+        color.value = Colors.red;
+        text.value = 'Remover dos favoritos';
       }
       bFav.value = !bFav.value;
     }

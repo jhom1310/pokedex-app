@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
 import 'package:pokedex/app/database/storage.dart';
 import 'package:pokedex/app/database/storage_keys.dart';
-
 import 'package:pokedex/app/modules/home/bindings/home_binding.dart';
 import 'package:pokedex/app/modules/home/views/home_view.dart';
 import 'package:pokedex/app/modules/login/bindings/login_binding.dart';

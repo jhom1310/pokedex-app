@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pokedex/app/global/styles.dart';
 import 'package:badges/badges.dart';
 import 'package:pokedex/app/modules/home/controllers/home_controller.dart';
 

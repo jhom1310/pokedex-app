@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/app/data/models/pokemon_model.dart';
 import 'package:pokedex/app/database/storage.dart';
-import 'package:pokedex/app/global/styles.dart';
 import 'package:pokedex/app/global/widgets/type.dart';
 import 'package:pokedex/app/modules/home/controllers/home_controller.dart';
 import 'package:pokedex/app/modules/home/views/detail.dart';

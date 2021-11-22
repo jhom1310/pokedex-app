@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:pokedex/app/global/bindings/global_binding.dart';
 import 'package:pokedex/app/global/themes.dart';
-
-import 'app/database/storage.dart';
 import 'app/routes/app_pages.dart';
 
 Future<void> main() async {

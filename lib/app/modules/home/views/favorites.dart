@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pokedex/app/global/styles.dart';
-import 'package:pokedex/app/global/widgets/item_card.dart';
 import 'package:pokedex/app/global/widgets/my_grid_view.dart';
-import 'package:pokedex/app/global/widgets/my_top_bar.dart';
-import 'package:pokedex/app/global/widgets/theme_button.dart';
-import 'package:pokedex/app/global/widgets/top_bar.dart';
 import 'package:pokedex/app/modules/home/controllers/home_controller.dart';
-import 'package:pokedex/app/modules/home/views/all.dart';
-import 'package:pokedex/app/modules/home/views/search.dart';
 
 class FavoritesView extends StatelessWidget {
   const FavoritesView({Key? key}) : super(key: key);

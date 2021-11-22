@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:pokedex/app/global/controllers/global_controller.dart';
 import 'package:pokedex/app/global/widgets/theme_button.dart';
-import 'package:pokedex/app/routes/app_pages.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {

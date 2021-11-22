@@ -17,15 +17,10 @@ class HomeController extends GetxController {
 
   RxList<Pokemon> pokesearchlist = RxList<Pokemon>();
   Future searchPokemon() async {
-    print('buscando pokemon');
     var poke = await repository.getPokemonByName(ctrlSearch.text);
     if (poke != null) {
       pokesearchlist.insert(0, poke);
     }
-  }
-
-  teste() {
-    print(ctrlSearch.text);
   }
 
   //Lista de pokemons

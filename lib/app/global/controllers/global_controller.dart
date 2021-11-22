@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class GlobalController extends GetxController {
-  //A guarda os dados da sessão do usuário
   final txtTheme = 'Tema escuro'.obs;
 
   void toggleTheme() {

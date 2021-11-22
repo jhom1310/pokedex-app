@@ -1,10 +1,4 @@
-import 'dart:convert';
-
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pokedex/app/data/models/pokemon_model.dart';
-import 'package:pokedex/app/data/models/result_model.dart';
-import 'package:pokedex/app/data/models/type_model.dart';
 
 class PokemonProvider extends GetConnect {
   static const String BASE_URL = 'https://pokeapi.co/api/v2/';
