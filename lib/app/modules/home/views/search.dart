@@ -32,7 +32,10 @@ class SearchView extends StatelessWidget {
           ),
           controller.pokesearchlist.length > 0
               ? ItemCard(poke: controller.pokesearchlist[0])
-              : Container()
+              : Container(
+                  alignment: Alignment.center,
+                  child: Text('Clique na lupa para pesquisar'),
+                )
         ],
       ),
     );
