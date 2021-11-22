@@ -13,6 +13,8 @@ class TypePoke extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(2),
+      margin: EdgeInsets.all(5),
       decoration: BoxDecoration(
         color: color,
         borderRadius: BorderRadius.circular(12),

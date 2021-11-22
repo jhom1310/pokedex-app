@@ -34,11 +34,6 @@ class Themes {
       elevation: 0,
       systemOverlayStyle: SystemUiOverlayStyle.light,
       backgroundColor: Color(0xffffCB05),
-      titleTextStyle: TextStyle(
-        fontFamily: 'Pokemon',
-        fontSize: 22,
-        color: Colors.black,
-      ),
     ),
   );
 
@@ -71,11 +66,6 @@ class Themes {
       elevation: 0,
       systemOverlayStyle: SystemUiOverlayStyle.dark,
       backgroundColor: Colors.yellow[700],
-      titleTextStyle: TextStyle(
-        fontFamily: 'Pokemon',
-        fontSize: 22,
-        color: Colors.white,
-      ),
     ),
   );
 }

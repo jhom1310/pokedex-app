@@ -6,6 +6,7 @@ import 'package:pokedex/app/database/storage.dart';
 import 'package:pokedex/app/global/styles.dart';
 import 'package:pokedex/app/global/widgets/type.dart';
 import 'package:pokedex/app/modules/home/controllers/home_controller.dart';
+import 'package:pokedex/app/modules/home/views/detail.dart';
 
 class ItemCard extends StatelessWidget {
   final Pokemon poke;
@@ -82,7 +83,9 @@ class ItemCard extends StatelessWidget {
                     width: 250,
                     alignment: Alignment.center,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(DetailView(poke: poke));
+                      },
                       child: Text('Ver Detalhes'),
                     ),
                   ),
