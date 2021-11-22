@@ -23,7 +23,6 @@ class Stat extends StatelessWidget {
             flex: 1,
             child: Text(
               label,
-              style: TextStyle(color: Colors.black.withOpacity(0.6)),
             ),
           ),
           Expanded(
