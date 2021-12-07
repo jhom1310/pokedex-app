@@ -10,8 +10,8 @@ class PokemonProvider extends GetConnect {
     return response;
   }
 
-  Future<Response> fetchListResults() async {
-    final response = await get(BASE_URL + 'pokemon?limit=20&offset=0',
+  Future<Response> fetchListResults(int page) async {
+    final response = await get(BASE_URL + 'pokemon?limit=20&offset=${page}',
         contentType: 'application/json; charset=utf-8');
     Get.log('Requisitando lista de Pokemons');
     return response;

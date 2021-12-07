@@ -26,7 +26,10 @@ class AllTView extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 10),
-              child: MyGridView(pokeList: controller.pokelist),
+              child: Obx(() => MyGridView(
+                  pokeList: controller.isFilter.value
+                      ? controller.pokelistType
+                      : controller.pokelist)),
             ),
           ),
         ],

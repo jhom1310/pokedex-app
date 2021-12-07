@@ -9,8 +9,8 @@ import 'package:pokedex/app/global/widgets/dialogs.dart';
 class PokemonRepository {
   final PokemonProvider api = PokemonProvider();
 
-  getResultList() async {
-    final response = await api.fetchListResults();
+  getResultList(int page) async {
+    final response = await api.fetchListResults(page);
 
     if (response.isOk) {
       return List<Result>.from(
