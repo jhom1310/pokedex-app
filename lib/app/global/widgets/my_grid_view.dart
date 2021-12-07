@@ -24,8 +24,8 @@ class MyGridView extends StatelessWidget {
               scrollController.position.maxScrollExtent &&
           !controller.isFilter.value) {
         print('object');
-        controller.attPokeList(count);
-        count += 20;
+        controller.attPokeList(controller.countPage.value);
+        controller.countPage.value += 20;
         triggerFetchMoreSize = 2 * triggerFetchMoreSize;
       }
     });
