@@ -12,7 +12,7 @@ class HomeController extends GetxController {
 
   late TabController tabController;
   final PokemonRepository repository = PokemonRepository();
-
+  var countPage = 20.obs;
   var isLoading = true.obs;
   var isFilter = false.obs;
 
